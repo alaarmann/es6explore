@@ -1,11 +1,11 @@
-Aspirant
-========
+EES6Explore
+===========
 
-Traits in JavaScript
+Explores ES6 features
 
 ## Installation
 
-  `npm install aspirant --save`
+  `npm install es6explore --save`
 
 ## Usage
 
@@ -26,5 +26,6 @@ Your feedback is appreciated, please e-mail me at [alaarmann@gmx.net](mailto:ala
 
 ## Release History
 
-* 0.1.0 Initial release
+* 0.0.1 Initial release
+* 0.0.2 Documentation fixed
 
