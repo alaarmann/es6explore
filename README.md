@@ -1,5 +1,5 @@
-EES6Explore
-===========
+ES6Explore
+==========
 
 Explores ES6 features
 
