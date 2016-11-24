@@ -3,17 +3,9 @@
  * Explore ES6 Features
 */
 
-/*globals module*/
+/*globals require, module*/
 
-class Person {
-  constructor(name, birthdate){
-    this.name = name;
-    this.birthdate = birthdate;
-  }
-  whatIsYourName(){
-    return 'My name is ' + this.name;
-  }
-}
+var Person = require('./js/Person');
 
 module.exports = Person;
 

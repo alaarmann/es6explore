@@ -29,6 +29,28 @@ describe('Person', function() {
       expect(saying).toBe('My name is Rudy Runner');
     });
   });
+
+  describe('makeMethod', function() {
+    it('makes new method with specified name', function() {
+      var person = new Person('Rudy Runner');
+      person.makeMethod('say', words => 'I say: ' + words);
+      expect(typeof person.say).toBe('function');
+      var saying = person.say('All right!');
+      expect(saying).toBe('I say: All right!');
+    });
+  });
+
+  describe('arrow functions', function() {
+
+    it('lexical this', function() {
+      var person = new Person('Peter');
+      var petersName = person.name;
+      expect(petersName).toBe('Peter');
+      person.makeMethod('sayName', () => this.name);
+      expect(person.sayName()).toBe(undefined);
+    });
+
+  });
 });
 
 
